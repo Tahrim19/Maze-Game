@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: salmon;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+h1{
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 50px;
+}
+
+p{
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px;
+    font-weight: 700;
+}
+
+#maze-container{
+    border: 10px solid crimson;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: max-content;
+    border-radius: 10px;
+}
+
+.row{
+    display: flex;
+}
+
+.cell{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.wall{
+    background-color: black;
+    border: 1px solid black;
+}
+
+#pacman{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#ghost{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+select{
+    width: 150px;
+    border-radius: 18px;
+    border: none;
+    margin-bottom: 20px;
+    padding: 5px 20px;
+
+}
+
+.result-message{
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px;
+    font-weight: 700;
+}
